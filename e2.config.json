@@ -3,9 +3,6 @@
     "name": "hello",
     "author": "ziven27"
   },
-  "_ziven27": {
-    "name": "郑成忠"
-  },
   "page": [
     {
       "from": "e2-tpl/static/css/index/a.css",
@@ -25,8 +22,13 @@
       "from": "e2-tpl/page/index/index.html",
       "to": "dist/page/index/index.html",
       "data": {
-        "welcome": "hello world"
+        "welcome": "hello world",
+        "mylove": "12321"
       }
     }
-  ]
+  ],
+  "_smy": {
+    "name": "123",
+    "value": "321"
+  }
 }
