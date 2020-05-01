@@ -1,0 +1,32 @@
+{
+  "_default": {
+    "name": "hello",
+    "author": "ziven27"
+  },
+  "_ziven27": {
+    "name": "郑成忠"
+  },
+  "page": [
+    {
+      "from": "e2-tpl/static/css/index/a.css",
+      "to": "dist/static/css/index/a.css",
+      "data": {
+        "color": "#dddddd"
+      }
+    },
+    {
+      "from": "e2-tpl/static/js/index/index.js",
+      "to": "dist/static/js/index/index.js",
+      "data": {
+        "welcome": "hello world"
+      }
+    },
+    {
+      "from": "e2-tpl/page/index/index.html",
+      "to": "dist/page/index/index.html",
+      "data": {
+        "welcome": "hello world"
+      }
+    }
+  ]
+}
