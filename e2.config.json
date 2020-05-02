@@ -1,7 +1,8 @@
 {
   "_default": {
-    "name": "hello",
-    "author": "ziven27"
+    "name": "7",
+    "value": "7",
+    "vlue": "4"
   },
   "page": [
     {
@@ -26,9 +27,5 @@
         "mylove": "12321"
       }
     }
-  ],
-  "_smy": {
-    "name": "123",
-    "value": "321"
-  }
+  ]
 }
