@@ -1,34 +1,23 @@
 {
   "_data": {
     "default": {
-      "name": "3",
+      "name": "4",
       "value": "5"
     },
     "user1": {
-      "name": "user1"
-    },
-    "user2": {
-      "name": "user2"
-    },
-    "user3": {
-      "name": "1"
+      "author": "ziven27"
     }
   },
   "page": {
     "_data": {
-      "color": "#dddddd"
+      "color": "red",
+      "core": "red",
+      "name": "123",
+      "welcome": "hello world"
     },
-    "css": [
-      "e2-tpl/static/css/index/a.css",
-      "dist/static/css/index/a.css"
-    ],
-    "js": [
-      "e2-tpl/static/js/index/index.js",
-      "dist/static/js/index/index.js"
-    ],
-    "html": [
-      "e2-tpl/page/index/index.html",
-      "dist/page/index/index.html"
+    "template": [
+      ["e2-tpl/page", "dist/page"],
+      ["e2-tpl/static", "dist/static"]
     ]
   }
 }
