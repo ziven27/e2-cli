@@ -1,7 +1,0 @@
-/**
- * @author: <%= data.author %>
- * @data: <%= data.date %>
- */
-body{
-    background-color: <%= data.color %>;
-}
