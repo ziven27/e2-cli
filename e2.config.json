@@ -1,26 +1,16 @@
 {
   "_data": {
-    "default": {
-      "name": "6",
-      "value": "5"
-    }
-  },
-  "page": {
-    "_data": {
-      "color": "red",
-      "core": "red",
-      "name": "123",
-      "welcome": "hello world"
+    "default": {},
+    "user1": {
+      "name": "user1"
     },
-    "template": [
-      [
-        "e2-tpl/page",
-        "dist/page"
-      ],
-      [
-        "e2-tpl/static",
-        "dist/static"
-      ]
-    ]
+    "user2": {
+      "name": "user2"
+    },
+    "user3": {}
+  },
+  "user": {
+    "_data": {},
+    "template": []
   }
 }
