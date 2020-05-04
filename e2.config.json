@@ -1,11 +1,8 @@
 {
   "_data": {
     "default": {
-      "name": "4",
+      "name": "6",
       "value": "5"
-    },
-    "user1": {
-      "author": "ziven27"
     }
   },
   "page": {
@@ -16,8 +13,14 @@
       "welcome": "hello world"
     },
     "template": [
-      ["e2-tpl/page", "dist/page"],
-      ["e2-tpl/static", "dist/static"]
+      [
+        "e2-tpl/page",
+        "dist/page"
+      ],
+      [
+        "e2-tpl/static",
+        "dist/static"
+      ]
     ]
   }
 }
