@@ -1,6 +1,6 @@
 {
   "name": "e2-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "compile any file with ejs",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "commander": "^5.1.0",
+    "ejs": "^3.1.2",
     "fs-extra": "^9.0.0",
     "inquirer": "^7.1.0",
     "mem-fs": "^1.1.3",
