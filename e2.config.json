@@ -1,17 +1,3 @@
-# e2-cli
-
-Compile any file with ejs
-
-## install
-
-```bash
-$ npm install e2-cli -g
-$ es-cli
-```
-
-## config
-
-```JSON
 {
   "_data": {
     "default": {
@@ -59,16 +45,3 @@ $ es-cli
     ]
   }
 }
-```
-
-```js
-const DATA_PRIVATE = {
-  date: new Date().toLocaleDateString(),
-};
-```
-
-the ejs data from `{...DATA_PRIVATE,..._data.default,..._data.user1, ...component._data, ...component._ask }`.
-
-the `_data.user1` is optional in `e2-cli`.
-
-the `_ask` is based on [inquirer](https://www.npmjs.com/package/inquirer).
