@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "description": "compile any file with ejs",
   "main": "index.js",
+  "bin": {
+    "e2-cli": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
