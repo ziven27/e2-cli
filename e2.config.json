@@ -3,11 +3,14 @@
     "default": {
       "version": "1.0.0"
     },
-    "user2": {
-      "userName": "user2"
+    "ziven27": {
+      "authorName": "ziven27"
+    },
+    "sunmeiye": {
+      "authorName": "sunmeiye"
     }
   },
-  "example": {
+  "component": {
     "_data": {
       "tplName": "component"
     },
@@ -19,8 +22,25 @@
     ],
     "template": [
       {
-        "from": "demo/components/Component/index.js",
-        "to": "src/components/<%= data.componentName %>/index.js"
+        "from": "example/components/Component",
+        "to": "src/components/<%= data.componentName %>"
+      }
+    ]
+  },
+  "page": {
+    "_data": {
+      "tplName": "page"
+    },
+    "_ask": [
+      {
+        "message": "请输入页面名称:",
+        "name": "pageName"
+      }
+    ],
+    "template": [
+      {
+        "from": "example/pages/index",
+        "to": "src/pages/<%= data.pageName %>"
       }
     ]
   }

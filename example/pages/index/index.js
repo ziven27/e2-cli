@@ -5,7 +5,7 @@
  */
 import React from 'react';
 
-function App() {
+function <%= data.pageName %>() {
     return (<div>hello world</div>);
 }
-export default App;
+export default <%= data.pageName %>;
