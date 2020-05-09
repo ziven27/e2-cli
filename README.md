@@ -19,8 +19,8 @@ Compile any file with ejs!
 ## install
 
 ```bash
-$ npm install e2-cli -g
-$ es-cli
+$ npm install e2-cli --save-dev
+$ npx es-cli
 ```
 
 ## config
