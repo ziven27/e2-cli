@@ -93,3 +93,13 @@ the `_data.user1` is optional in `e2-cli`.
 the `_ask` is based on [inquirer](https://www.npmjs.com/package/inquirer).
 
 data scope is `e2`, so you can set ejs data `<%= e2.authorName %>`.
+
+## API
+
+| key                    | function                                 |
+| ---------------------- | ---------------------------------------- |
+| `_data`                | globalData (each ejs will got this data) |
+| `\[tplName\]._tip`     | tips of template                         |
+| `\[tplName\]._ask`     | get data from user for current template  |
+| `\[tplName\]._data`    | data for current template                |
+| `\[tplName\].template` | template                                 |

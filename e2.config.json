@@ -45,6 +45,7 @@
     ]
   },
   "ejs": {
+    "_tip": "显示 ejs 模版",
     "_data": {
       "tplName": "page"
     },
