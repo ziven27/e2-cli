@@ -1,5 +1,7 @@
 # e2-cli
 
+![img](./src/example.png)
+
 Compile any file with ejs
 
 ## install
