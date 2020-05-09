@@ -23,7 +23,7 @@
     "template": [
       {
         "from": "example/components/Component",
-        "to": "src/components/<%= data.componentName %>"
+        "to": "src/components/<%= e2.componentName %>"
       }
     ]
   },
@@ -40,7 +40,7 @@
     "template": [
       {
         "from": "example/pages/home",
-        "to": "src/pages/<%= data.pageName %>"
+        "to": "src/pages/<%= e2.pageName %>"
       }
     ]
   },
@@ -57,7 +57,7 @@
     "template": [
       {
         "from": "example/pages/ejs/index.html",
-        "to": "src/pages/<%= data.pageName %>/index.html",
+        "to": "src/pages/<%= e2.pageName %>/index.html",
         "disabledEjs": true
       }
     ]

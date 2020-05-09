@@ -55,7 +55,7 @@ $ es-cli
     "template": [
       {
         "from": "example/components/Component",
-        "to": "src/components/<%= data.componentName %>"
+        "to": "src/components/<%= e2.componentName %>"
       }
     ]
   },
@@ -72,7 +72,7 @@ $ es-cli
     "template": [
       {
         "from": "example/pages/index.html",
-        "to": "src/pages/<%= data.pageName %>/index.html",
+        "to": "src/pages/<%= e2.pageName %>/index.html",
         "disabledEjs": true
       }
     ]
@@ -91,3 +91,5 @@ the ejs data from `{...DATA_PRIVATE,..._data.default,..._data.user1, ...componen
 the `_data.user1` is optional in `e2-cli`.
 
 the `_ask` is based on [inquirer](https://www.npmjs.com/package/inquirer).
+
+data scope is `e2`, so you can set ejs data `<%= e2.authorName %>`.

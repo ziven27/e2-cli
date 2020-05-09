@@ -1,11 +1,11 @@
 /**
- * Author: <%= data.authorName %>
- * Date: <%= data.date %>
+ * Author: <%= e2.authorName %>
+ * Date: <%= e2.date %>
  * Desc: 这是什么？
  */
 import React from 'react';
 
-function <%= data.pageName %>() {
+function <%= e2.pageName %>() {
     return (<div>hello world</div>);
 }
-export default <%= data.pageName %>;
+export default <%= e2.pageName %>;
