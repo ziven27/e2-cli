@@ -16,7 +16,6 @@ Compile any file with ejs!
 
 ![img](./src/use.png)
 
-
 ## install
 
 ```bash
@@ -91,4 +90,3 @@ the ejs data from `{...DATA_PRIVATE,..._data.default,..._data.user1, ...componen
 the `_data.user1` is optional in `e2-cli`.
 
 the `_ask` is based on [inquirer](https://www.npmjs.com/package/inquirer).
-
