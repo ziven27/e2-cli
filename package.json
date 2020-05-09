@@ -1,6 +1,6 @@
 {
   "name": "e2-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "compile any file with ejs",
   "main": "index.js",
   "bin": {
