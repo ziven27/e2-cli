@@ -1,10 +1,21 @@
 # e2-cli
 
+Compile any file with ejs!
+
+[![npm package][npm-badge]][npm-url]
+[![npm downloads][npm-downloads]][npm-url]
+[![github][git-badge]][git-url]
+
+[npm-badge]: https://img.shields.io/npm/v/e2-cli.svg
+[npm-url]: https://www.npmjs.org/package/e2-cli
+[npm-downloads]: https://img.shields.io/npm/dw/e2-cli
+[git-url]: https://github.com/ziven27/e2-cli
+[git-badge]: https://img.shields.io/github/stars/ziven27/e2-cli.svg?style=social
+
 ![img](./src/example.png)
 
 ![img](./src/use.png)
 
-Compile any file with ejs
 
 ## install
 
