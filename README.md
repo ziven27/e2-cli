@@ -71,8 +71,9 @@ $ es-cli
     ],
     "template": [
       {
-        "from": "example/pages/index",
-        "to": "src/pages/<%= data.pageName %>"
+        "from": "example/pages/index.html",
+        "to": "src/pages/<%= data.pageName %>/index.html",
+        "disabledEjs": true
       }
     ]
   }

@@ -39,8 +39,26 @@
     ],
     "template": [
       {
-        "from": "example/pages/index",
+        "from": "example/pages/home",
         "to": "src/pages/<%= data.pageName %>"
+      }
+    ]
+  },
+  "ejs": {
+    "_data": {
+      "tplName": "page"
+    },
+    "_ask": [
+      {
+        "message": "请输入页面名称:",
+        "name": "pageName"
+      }
+    ],
+    "template": [
+      {
+        "from": "example/pages/ejs/index.html",
+        "to": "src/pages/<%= data.pageName %>/index.html",
+        "disabledEjs": true
       }
     ]
   }
