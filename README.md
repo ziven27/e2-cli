@@ -2,6 +2,8 @@
 
 ![img](./src/example.png)
 
+![img](./src/use.png)
+
 Compile any file with ejs
 
 ## install
@@ -16,9 +18,11 @@ $ es-cli
 ```JSON
 {
   "_data": {
+    /* global data */
     "default": {
       "version": "1.0.0"
     },
+    /* you can select one of them when compile template */
     "user1": {
       "authorName": "user1"
     },
@@ -27,9 +31,11 @@ $ es-cli
     }
   },
   "component": {
+    /* just in this template */
     "_data": {
       "tplName": "component"
     },
+    /* ask user to input something */
     "_ask": [
       {
         "message": "请输入组件名称:",
@@ -74,3 +80,4 @@ the ejs data from `{...DATA_PRIVATE,..._data.default,..._data.user1, ...componen
 the `_data.user1` is optional in `e2-cli`.
 
 the `_ask` is based on [inquirer](https://www.npmjs.com/package/inquirer).
+
