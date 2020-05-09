@@ -4,10 +4,7 @@
   "description": "compile any file with ejs",
   "main": "index.js",
   "bin": {
-    "e2-cli": "./bin/index.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "e2-cli": "./bin/e2-cli.js"
   },
   "repository": {
     "type": "git",
@@ -24,14 +21,14 @@
   },
   "homepage": "https://github.com/ziven27/e2-cli#readme",
   "dependencies": {
-    "chalk": "^4.0.0",
     "commander": "^5.1.0",
     "ejs": "^3.1.2",
     "fs-extra": "^9.0.0",
     "inquirer": "^7.1.0",
     "mem-fs": "^1.1.3",
-    "mem-fs-editor": "^6.0.0",
-    "minimist": "^1.2.5",
+    "mem-fs-editor": "^6.0.0"
+  },
+  "devDependencies": {
     "prettier": "^2.0.5"
   }
 }

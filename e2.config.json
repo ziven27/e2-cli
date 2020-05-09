@@ -3,14 +3,11 @@
     "default": {
       "version": "1.0.0"
     },
-    "user1": {
-      "authorName": "user1"
-    },
     "user2": {
-      "authorName": "user2"
+      "name": "user2"
     }
   },
-  "component": {
+  "example": {
     "_data": {
       "tplName": "component"
     },
@@ -22,25 +19,8 @@
     ],
     "template": [
       {
-        "from": "example/components/Component",
-        "to": "src/components/<%= data.componentName %>"
-      }
-    ]
-  },
-  "page": {
-    "_data": {
-      "tplName": "page"
-    },
-    "_ask": [
-      {
-        "message": "请输入页面名称:",
-        "name": "pageName"
-      }
-    ],
-    "template": [
-      {
-        "from": "example/pages/index",
-        "to": "src/pages/<%= data.pageName %>"
+        "from": "demo/components/Component/index.js",
+        "to": "src/components/<%= data.componentName %>/index.js"
       }
     ]
   }
