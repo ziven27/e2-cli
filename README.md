@@ -82,10 +82,13 @@ $ npx es-cli
 
 ```js
 const DATA_PRIVATE = {
+  /* 日期对象 */  
   date: new Date().toLocaleDateString(),
+  /* text-transform: capitalize; */
   ttc: function (str = '') {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   },
+  /* text-transform: lowercase; */
   ttl: function (str = '') {
     return str.toLowerCase();
   }
