@@ -83,6 +83,12 @@ $ npx es-cli
 ```js
 const DATA_PRIVATE = {
   date: new Date().toLocaleDateString(),
+  ttc: function (str = '') {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  },
+  ttl: function (str = '') {
+    return str.toLowerCase();
+  }
 };
 ```
 

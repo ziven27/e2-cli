@@ -40,7 +40,7 @@
     "template": [
       {
         "from": "example/pages/home",
-        "to": "src/pages/<%= e2.pageName %>"
+        "to": "src/pages/<%= e2.ttc(e2.pageName) %>"
       }
     ]
   },
