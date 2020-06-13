@@ -1,16 +1,10 @@
 {
   "_data": {
-    "default": {
-      "version": "1.0.0"
-    },
-    "ziven27": {
-      "authorName": "ziven27"
-    },
-    "sunmeiye": {
-      "authorName": "sunmeiye"
-    }
+    "version": "1.0.0",
+    "authorName": "undefined"
   },
   "component": {
+    "_description": "添加组件",
     "_data": {
       "tplName": "component"
     },
@@ -22,12 +16,13 @@
     ],
     "template": [
       {
-        "from": "example/components/Component",
-        "to": "src/components/<%= e2.componentName %>"
+        "from": "e2-tpl/components/Component",
+        "to": "src/components/<%= e2.ttc(e2.componentName) %>"
       }
     ]
   },
   "page": {
+    "_description": "添加页面",
     "_data": {
       "tplName": "page"
     },
@@ -39,13 +34,13 @@
     ],
     "template": [
       {
-        "from": "example/pages/home",
+        "from": "e2-tpl/pages/page",
         "to": "src/pages/<%= e2.ttc(e2.pageName) %>"
       }
     ]
   },
   "ejs": {
-    "_tip": "显示 ejs 模版",
+    "_description": "测试 disabledEjs ",
     "_data": {
       "tplName": "page"
     },
@@ -57,8 +52,8 @@
     ],
     "template": [
       {
-        "from": "example/pages/ejs/index.html",
-        "to": "src/pages/<%= e2.pageName %>/index.html",
+        "from": "e2-tpl/pages/ejs/index.html",
+        "to": "src/pages/<%= e2.ttl(e2.pageName) %>/index.html",
         "disabledEjs": true
       }
     ]
