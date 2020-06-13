@@ -12,9 +12,9 @@ Compile any file with ejs!
 [git-url]: https://github.com/ziven27/e2-cli
 [git-badge]: https://img.shields.io/github/stars/ziven27/e2-cli.svg?style=social
 
-![img](./src/example.png)
+![img](./src/1.png)
 
-![img](./src/use.png)
+![img](./src/2.png)
 
 ## install
 
@@ -27,20 +27,14 @@ $ npx es-cli
 
 ```JSON
 {
+  /* global data */
   "_data": {
-    /* global data */
-    "default": {
-      "version": "1.0.0"
-    },
-    /* you can select one of them when compile template */
-    "user1": {
-      "authorName": "user1"
-    },
-    "user2": {
-      "authorName": "user2"
-    }
+     "version": "1.0.0",
+      "authorName": "undefined"
   },
   "component": {
+    /* description of this template */
+    "_description": "添加页面",
     /* just in this template */
     "_data": {
       "tplName": "component"
@@ -73,6 +67,7 @@ $ npx es-cli
       {
         "from": "example/pages/index.html",
         "to": "src/pages/<%= e2.pageName %>/index.html",
+        /* if true file will not compile with ejs */
         "disabledEjs": true
       }
     ]
@@ -82,7 +77,8 @@ $ npx es-cli
 
 ```js
 const DATA_PRIVATE = {
-  /* 日期对象 */  
+  /* 日期对象 */
+
   date: new Date().toLocaleDateString(),
   /* text-transform: capitalize; */
   ttc: function (str = '') {
@@ -91,7 +87,7 @@ const DATA_PRIVATE = {
   /* text-transform: lowercase; */
   ttl: function (str = '') {
     return str.toLowerCase();
-  }
+  },
 };
 ```
 
@@ -108,10 +104,8 @@ data scope is `e2`, so you can set ejs data `<%= e2.authorName %>`.
 | key                                   | function                                 |
 | ------------------------------------- | ---------------------------------------- |
 | `_data`                               | globalData (each ejs will got this data) |
-| `\[tplName\]._tip`                    | tips of template                         |
+| `\[tplName\]._description`            | description of template                  |
 | `\[tplName\]._ask`                    | get data from user for current template  |
 | `\[tplName\]._data`                   | data for current template                |
 | `\[tplName\].template`                | template                                 |
 | `\[tplName\].template[{disabledEjs}]` | disabledEjs in this template             |
-
-
