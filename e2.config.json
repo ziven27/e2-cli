@@ -17,11 +17,7 @@
     "template": [
       {
         "from": "e2-tpl/components/Component",
-        "to": "components/<%= e2.ttc(e2.componentName) %>"
-      },
-      {
-        "from": "e2-tpl/components/Component",
-        "to": "components/<%= e2.ttc(e2.componentName) %>3"
+        "to": "@/src/components/<%= e2.ttc(e2.componentName) %>"
       }
     ]
   },
@@ -39,7 +35,7 @@
     "template": [
       {
         "from": "e2-tpl/pages/page",
-        "to": "<%= e2.ttc(e2.pageName) %>"
+        "to": "@/src/pages/<%= e2.ttc(e2.pageName) %>"
       }
     ]
   },
@@ -57,7 +53,7 @@
     "template": [
       {
         "from": "e2-tpl/pages/ejs/index.html",
-        "to": "src/pages/<%= e2.ttl(e2.pageName) %>/index.html",
+        "to": "@/src/pages/<%= e2.ttl(e2.pageName) %>/index.html",
         "disabledEjs": true
       }
     ]
