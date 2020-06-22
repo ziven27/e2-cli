@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "authorName": "undefined"
   },
-  "component": {
-    "_description": "添加组件",
+  "componentGlobal": {
+    "_description": "全局组件",
     "_data": {
-      "tplName": "component"
+      "componentName": "component"
     },
     "_ask": [
       {
@@ -18,6 +18,24 @@
       {
         "from": "e2-tpl/components/Component",
         "to": "@/src/components/<%= e2.ttc(e2.componentName) %>"
+      }
+    ]
+  },
+  "componentCurrent": {
+    "_description": "在 ./components 创建组件 ",
+    "_data": {
+      "componentName": "component"
+    },
+    "_ask": [
+      {
+        "message": "请输入组件名称:",
+        "name": "componentName"
+      }
+    ],
+    "template": [
+      {
+        "from": "e2-tpl/components/Component",
+        "to": "./components/<%= e2.ttc(e2.componentName) %>"
       }
     ]
   },
