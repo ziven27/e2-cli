@@ -54,6 +54,8 @@ $ npx e2-cli
     /* 必须，模版列表 */
     "template": [
       {
+        /* 是包含 . 开头的文件 */
+        "dot": "false | true",
         "from": "e2-tpl/components/Component",
         "to": "src/components/<%= e2.componentName %>"
       }
